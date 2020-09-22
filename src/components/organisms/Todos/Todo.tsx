@@ -1,12 +1,10 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SwipeRow } from 'react-native-swipe-list-view';
-
 import { COLOR } from '../../../constants/theme';
 import * as DoneButton from './DoneButton';
 import * as DeleteButton from './DeleteButton';
 import TodoDisplay from '../../molecules/Todo';
-
 export { DoneButton, DeleteButton };
 export interface GotoDetail {
   (state: State, isEditable: boolean): void;
@@ -34,11 +32,13 @@ export interface EditableActions {
   removeTodo: DeleteButton.RemoveTodo;
   gotoDetail: GotoDetail;
 }
+
 interface EditableProps {
   isEditable: true;
   state: State;
   actions: EditableActions;
 }
+
 function EditableRow(props: EditableProps) {
   const {
     state,
@@ -94,6 +94,7 @@ interface ReadonlyProps {
   state: State;
   actions: ReadonlyActions;
 }
+
 function ReadonlyRow(props: ReadonlyProps) {
   const {
     isEditable,

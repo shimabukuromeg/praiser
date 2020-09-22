@@ -21,14 +21,15 @@ interface EditableProps {
   todos: State;
   actions: Todo.EditableActions;
 }
-interface ReadonlyPrpos {
+
+interface ReadonlyProps {
   isEditable: false;
   todos: State;
   header: React.ReactElement;
   actions: Todo.ReadonlyActions;
 }
 
-type Props = EditableProps | ReadonlyPrpos;
+type Props = EditableProps | ReadonlyProps;
 
 export default function Todos(props: Props) {
   if (props.isEditable) {

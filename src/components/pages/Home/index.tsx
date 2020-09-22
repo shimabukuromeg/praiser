@@ -36,14 +36,14 @@ const styles = StyleSheet.create({
 const todos = [
   {
     id: '1',
-    title: 'Todo',
-    detail: 'to do',
+    title: '役所に書類を提出する',
+    detail: '転居手続き',
     isDone: false,
   },
   {
     id: '2',
-    title: 'Done',
-    detail: 'done task',
+    title: '郵便局で書類を送る',
+    detail: '電気代の名義を変更',
     isDone: true,
   },
 ];
