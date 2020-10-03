@@ -53,12 +53,14 @@ export default function Home() {
   const onPress = React.useCallback(() => {
     navigate(INPUT);
   }, [navigate]);
+
   const gotoDetail = React.useCallback(
     (state: Todo.State, isEditable: boolean) => {
       navigate(DETAIL, { ...state, isEditable });
     },
     [navigate],
   );
+
   const actions = React.useMemo(
     () => ({
       removeTodo: () => {},

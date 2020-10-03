@@ -24,13 +24,13 @@ interface Data {
 
 const renderData = [
   {
-    text: 'Hello React Native world.\nWelcome to the JS world.\n\nThis application is made from React Native.',
+    text: 'おおおおおおおおおおおおお',
   },
   {
-    text: 'If you use this application,\nyou could manage your task.\n\nSo, please register and manage your task',
+    text: 'ふぁああああああああ',
   },
   {
-    text: 'In the first, you have to register your account.\n\nPlease, tell me your email.',
+    text: 'ううぇええええええ',
   },
 ];
 
@@ -50,7 +50,7 @@ export default function Initial() {
       }
       const carousel = (carouselRef.current as any) as CarouselStatic<Data>;
       carousel.snapToItem(nextIndex);
-    }, 250);
+    }, 100);
     changeSlide(nextIndex);
   }, [activeSlide]);
   return (
