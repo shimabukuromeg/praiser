@@ -43,6 +43,7 @@ export default function Button(props: Props) {
         backgroundColor: disabled ? disabledColor : color,
       }}
       icon={icon}
+      focusable="true"
     >
       {label && <Text style={[styles.text, textStyle]}>{label}</Text>}
     </PaperButton>
