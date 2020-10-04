@@ -36,7 +36,7 @@ const theme = {
 };
 
 export default function TextField(props: Props) {
-  const { label, value, onChangeText = () => {}, style, autoCompleteType, secureTextEntry, disabled, testID } = props;
+  const { label, value, onChangeText = () => {}, style, autoCompleteType, secureTextEntry, disabled } = props;
   return (
     <TextInput
       label={label}
@@ -49,6 +49,7 @@ export default function TextField(props: Props) {
       autoCompleteType={autoCompleteType}
       autoCapitalize="none"
       secureTextEntry={secureTextEntry}
+      focusable="false"
     />
   );
 }

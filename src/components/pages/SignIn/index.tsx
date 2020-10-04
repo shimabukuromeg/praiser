@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
 import { useControlledComponent } from '../../../lib/hooks';
-import { Text, Button, dismiss, TextField } from '../../atoms';
+import { Button, dismiss, TextField } from '../../atoms';
 import SignInWithGoogle from './SignInWithGoogle';
 import { Context, Status } from '../../../contexts/ui';
 
